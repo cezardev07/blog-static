@@ -1,0 +1,105 @@
+:root{
+    --txt: rgb(255, 255, 255);
+    --bg:rgb(14, 35, 52);
+    --bg-header: rgba(44, 94, 134, 0.351);
+}
+header{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    background: var(--bg-header);
+    transition: all .3s ease;
+}
+header:hover{
+    background: var(--bg);
+}
+header a{
+    text-decoration: none;
+    color: var(--txt);
+}
+header .logo{
+    font-size: 3rem;
+}
+header nav{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    font-size: 1.2rem;
+    padding: .8rem 1.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+header nav ul li a:hover{
+    background: rgba(65, 105, 225, 0.166);
+}
+header nav img{
+    width: 70px;
+}
+header nav ul li .js{
+    color: yellow;
+}
+header nav ul li .html{
+    color: rgb(228, 106, 84);
+}header nav ul li .css{
+    color: rgb(53, 140, 226);
+}
+header .dir button{
+    cursor: pointer;
+    padding: .5rem 1.5rem;
+    font-size: 1.2rem;
+    margin-right: 3rem;
+    background: royalblue;
+    color: white;
+    border: none;
+}
+header .dir button:hover{
+    background: rgb(26, 109, 197);
+}
+header .mobile{
+    display: none;
+    padding: .8rem;
+    padding-right: 4rem;
+    cursor: pointer;
+}
+header .mobile span{
+    font-size: 2rem;
+    color: var(--txt);
+}
+header .mobile span::selection{
+    background: transparent;
+}
+.active{
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 670px){
+    header nav ul{
+        display: none;
+    }
+    header nav{
+        padding: 1.5;
+    }
+    header .dir {
+        display: none;
+    }
+    header .mobile{
+        display: block;
+    }
+    header nav ul li{
+        margin-bottom: 5px;
+    }
+}

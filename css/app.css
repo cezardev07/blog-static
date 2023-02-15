@@ -1,0 +1,204 @@
+main{
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto 200px;
+    gap: 2rem;
+}
+main .context{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+main .context #item0{
+    padding-top: 150px;
+}
+main .context .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+main .context .items article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    padding: 2rem;
+    background: rgba(64, 114, 155, 0.313);
+
+    border-radius: 10px;
+}
+main .context .items article h1{
+    font-size: 2.3rem;
+}
+main .context .items article p{
+    font-size: 1.3rem;
+}
+main .context .items article img{
+    width: 100%;
+}
+main .context .items article li{
+    margin-bottom: 1rem;
+}
+main .topicos{
+    position: relative;
+    padding-top: 150px;
+}
+main .topicos nav{
+    position: fixed;
+    min-height: 200px;
+    background: rgba(64, 114, 155, 0.313);
+    border-radius: 10px;
+    padding: 1rem;
+    padding-right: 2.5rem;
+    transition: all .3s ease;
+}
+main .topicos nav:hover{
+    scale: 1.1;
+}
+main .topicos nav h2{
+    font-size: 2rem;
+    cursor: default;
+    text-align: center;
+}
+main .topicos nav ul{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-left: 1.8rem;
+    gap: 1.1rem;
+
+    overflow-x: hidden;
+}
+main .topicos nav ul li{
+    list-style: none;
+}
+main .topicos nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+main .topicos nav ul li a:hover{
+    color: royalblue;
+}
+.cookies{
+    padding: 1rem;
+    width: 100%;
+
+    position: fixed;
+    z-index: 1;
+    background: rgba(34, 141, 198, 0.407);
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+}
+.cookies p {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.cookies button{
+    padding: .8rem 1.8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    background: royalblue;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+}
+.cookies button:hover{
+    background: rgb(52, 84, 182);
+}
+.cookies .btn{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arrow-top{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all .3s ease;
+}
+.arrow-top:hover{
+    scale: 1.1;
+}
+.arrow-top a{
+    text-decoration: none;
+
+    color: royalblue;
+    font-size: 50px;
+}
+.arrow-top a span{
+    font-size: 3rem;
+}
+.arrow-top a span::selection{
+    background: transparent;
+}
+article{
+    transition: all .3s ease;
+}
+article:hover{
+    scale: 1.02;
+}
+@media (max-width: 839px){
+    main{
+        grid-template-columns: auto;
+    }
+    main .topicos{
+        display: none;
+    }
+    main .context .items h1{
+        font-size: 2rem;
+    }
+    main .context .items p{
+        font-size: 1.3rem;
+    }
+
+
+    .cookies p {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+    .cookies button{
+        padding: .3rem 1.3rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+    
+        background: royalblue;
+        color: #fff;
+        border: none;
+        margin-left: 10px;
+    }
+    .cookies button:hover{
+        background: rgb(52, 84, 182);
+    }
+    .cookies .btn{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+}
