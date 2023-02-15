@@ -1,0 +1,1 @@
+### blog criado para estudar alguns conceito sobre a variavel var em javascript que hoje em dia ja não e muito ultilizada, site não profissional mas funcional, não esperece muito desse codigo e apenas para fonte de estudo
