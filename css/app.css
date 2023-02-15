@@ -39,7 +39,8 @@ main .context .items article p{
     font-size: 1.3rem;
 }
 main .context .items article img{
-    width: 100%;
+    width: 100%; 
+    object-fit: fill;
 }
 main .context .items article li{
     margin-bottom: 1rem;
